@@ -45,7 +45,7 @@ function show(){
     d3.select(window).on("click", function() { zoom(root); });
   });
 
-  function zoom(d, i) {
+  function zoom(d) {
     var k = r / d.r / 2;
     x.domain([d.x - d.r, d.x + d.r]);
     y.domain([d.y - d.r, d.y + d.r]);
